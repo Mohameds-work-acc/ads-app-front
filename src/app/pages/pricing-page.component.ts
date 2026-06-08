@@ -9,22 +9,22 @@ import { RouterLink } from '@angular/router';
 export class PricingPageComponent {
   readonly plans = [
     {
-      name: 'Payment Support',
-      price: 'Custom quote',
-      description: 'For TikTok Coin-related payment assistance, billing questions, receipts, and status review.',
-      features: ['Payment request review', 'Receipt and invoice support', 'Transaction status updates']
+      name: 'Starter',
+      price: '$9 / month',
+      description: 'For individuals who want a simple space to keep tasks and notes organized.',
+      features: ['Tasks and notes', 'Basic search', 'Email support']
     },
     {
-      name: 'Ads Setup',
-      price: 'Custom quote',
-      description: 'For Facebook or Instagram campaign setup support based on your approved budget and campaign details.',
-      features: ['Campaign setup assistance', 'Audience and placement coordination', 'Creative upload support']
+      name: 'Team',
+      price: '$19 / month',
+      description: 'For small teams that need shared client records and lightweight reporting.',
+      features: ['Clients and reports', 'Shared workspace', 'Priority support']
     },
     {
-      name: 'Operations Support',
-      price: 'Custom quote',
-      description: 'For startups that need ongoing support across payment workflows and social advertising requests.',
-      features: ['Priority request handling', 'Campaign change support', 'Basic reporting summaries']
+      name: 'Business',
+      price: '$39 / month',
+      description: 'For growing businesses that need a more structured dashboard for daily operations.',
+      features: ['Everything in Team', 'Workspace controls', 'Onboarding help']
     }
   ];
 }

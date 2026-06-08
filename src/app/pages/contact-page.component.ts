@@ -34,7 +34,7 @@ export class ContactPageComponent {
     ].join('\n');
 
     const mailto =
-      `mailto:support@full-ads.com?subject=${encodeURIComponent('Full Ads support request')}` +
+      `mailto:support@simple-saas-dashboard.com?subject=${encodeURIComponent('Simple SaaS Dashboard support request')}` +
       `&body=${encodeURIComponent(body)}`;
 
     this.statusMessage = 'Opening your email app with the request details.';

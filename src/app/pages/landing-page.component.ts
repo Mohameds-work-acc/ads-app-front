@@ -9,37 +9,41 @@ import { RouterLink } from '@angular/router';
 export class LandingPageComponent {
   readonly reviewPoints = [
     'Business identity and contact information are easy to find.',
-    'Privacy Policy explains account, payment, and advertising data use.',
-    'Terms describe payment rules, refunds, user responsibilities, and platform limits.'
+    'Privacy Policy and Terms are linked from every page.',
+    'The app clearly explains what users can do with tasks, notes, clients, and reports.'
   ];
 
   readonly services = [
     {
-      title: 'TikTok Coin Payment Support',
-      body: 'Guided support for payment requests, billing questions, receipts, transaction review, and status updates connected to TikTok Coin-related app workflows.'
+      title: 'Tasks',
+      body: 'Keep personal and business work organized with a simple list view for priorities, deadlines, and status.'
     },
     {
-      title: 'Facebook Ads Setup',
-      body: 'Campaign setup assistance for Facebook ads, including objective selection, budget entry, audience details, creative upload, and launch coordination.'
+      title: 'Notes',
+      body: 'Capture ideas, meeting notes, and reminders in a lightweight workspace that stays easy to scan.'
     },
     {
-      title: 'Instagram Ads Setup',
-      body: 'Support for Instagram placement setup, creative review, ad account details, campaign changes, and basic performance reporting.'
+      title: 'Clients',
+      body: 'Track contacts, relationship details, and account history for small teams and independent operators.'
+    },
+    {
+      title: 'Reports',
+      body: 'Review simple summaries that help users understand progress without needing a heavy analytics tool.'
     }
   ];
 
   readonly steps = [
     {
-      title: 'Submit a request',
-      body: 'Tell us whether you need payment support, ad campaign creation, or account help through the contact page.'
+      title: 'Add your workspace',
+      body: 'Create a clean place for your tasks, notes, clients, and reports.'
     },
     {
-      title: 'Confirm details',
-      body: 'We review the required account, billing, campaign, creative, and compliance details before taking action.'
+      title: 'Organize your data',
+      body: 'Group what matters, keep it searchable, and separate day-to-day work from longer term records.'
     },
     {
-      title: 'Receive support',
-      body: 'We complete the agreed service, provide status updates, and share receipts or campaign summaries when applicable.'
+      title: 'Review progress',
+      body: 'Use simple reporting views to stay on top of personal productivity and business activity.'
     }
   ];
 }
