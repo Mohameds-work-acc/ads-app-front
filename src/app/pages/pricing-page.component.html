@@ -1,0 +1,39 @@
+<section class="page-hero">
+  <div class="container">
+    <p class="eyebrow">Pricing</p>
+    <h1>Pricing</h1>
+    <p>
+      Full Ads pricing depends on the requested service, platform requirements, campaign budget,
+      payment provider fees, and the amount of support needed before work begins.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="grid">
+      @for (plan of plans; track plan.name) {
+        <article class="card">
+          <h3>{{ plan.name }}</h3>
+          <p class="price">{{ plan.price }}</p>
+          <p>{{ plan.description }}</p>
+          <ul class="feature-list">
+            @for (feature of plan.features; track feature) {
+              <li>{{ feature }}</li>
+            }
+          </ul>
+        </article>
+      }
+    </div>
+
+    <div class="notice pricing-notice">
+      Platform charges, advertising spend, taxes, exchange rates, and payment processing fees are
+      separate from Full Ads service fees unless explicitly stated in writing.
+    </div>
+
+    <div class="action-row pricing-actions">
+      <a class="button primary" routerLink="/contact">Request pricing</a>
+      <a class="button secondary on-light" routerLink="/refund">Refund policy</a>
+    </div>
+  </div>
+</section>

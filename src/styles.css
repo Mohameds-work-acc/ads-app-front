@@ -213,6 +213,12 @@ h3 {
   background: rgba(255, 255, 255, 0.08);
 }
 
+.button.secondary.on-light {
+  color: var(--brand-dark);
+  border-color: var(--line);
+  background: #fff;
+}
+
 .panel {
   padding: 22px;
   border: 1px solid rgba(255, 255, 255, 0.28);
@@ -290,6 +296,21 @@ h3 {
   color: var(--muted);
 }
 
+.price {
+  margin: 0 0 14px;
+  color: var(--brand-dark);
+  font-size: 24px;
+  font-weight: 850;
+}
+
+.feature-list {
+  display: grid;
+  gap: 8px;
+  padding-left: 20px;
+  margin: 18px 0 0;
+  color: var(--muted);
+}
+
 .steps {
   display: grid;
   gap: 14px;
@@ -321,6 +342,11 @@ h3 {
   border-left: 5px solid var(--accent);
   background: #fff9e8;
   color: #4d3a12;
+}
+
+.pricing-notice,
+.pricing-actions {
+  margin-top: 28px;
 }
 
 .page-hero {
