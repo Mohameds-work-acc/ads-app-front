@@ -1,0 +1,30 @@
+<header class="site-header">
+  <nav class="nav page-width" aria-label="Main navigation">
+    <a class="brand" routerLink="/">
+      <span class="brand-mark">FA</span>
+      <span>Full Ads</span>
+    </a>
+
+    <div class="nav-links">
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+      <a routerLink="/contact" routerLinkActive="active">Contact</a>
+      <a routerLink="/privacy" routerLinkActive="active">Privacy Policy</a>
+      <a routerLink="/terms" routerLinkActive="active">Terms of Service</a>
+    </div>
+  </nav>
+</header>
+
+<main class="site-main">
+  <router-outlet />
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner page-width">
+    <span>&copy; 2026 Full Ads. All rights reserved.</span>
+    <div class="footer-links">
+      <a routerLink="/contact">Contact</a>
+      <a routerLink="/privacy">Privacy Policy</a>
+      <a routerLink="/terms">Terms of Service</a>
+    </div>
+  </div>
+</footer>

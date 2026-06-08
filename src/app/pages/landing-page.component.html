@@ -1,0 +1,80 @@
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <p class="eyebrow">Payment and advertising operations</p>
+      <h1>Full Ads</h1>
+      <p class="lead">
+        A simple support site for startups that need help with TikTok Coin payment workflows and
+        Facebook or Instagram ad setup, built for onboarding review and clear contact, privacy,
+        and terms pages.
+      </p>
+
+      <div class="action-row">
+        <a class="button primary" routerLink="/contact">Contact support</a>
+        <a class="button secondary" routerLink="/privacy">Review privacy</a>
+      </div>
+    </div>
+
+    <aside class="panel" aria-label="Review readiness checklist">
+      <ul class="panel-list">
+        @for (point of reviewPoints; track point) {
+          <li>
+            <span class="check">✓</span>
+            <span>{{ point }}</span>
+          </li>
+        }
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<section class="section" id="services">
+  <div class="container">
+    <h2>Services</h2>
+    <p class="section-intro">
+      We help users complete operational tasks related to digital coin payments and social
+      advertising campaigns. We are an independent service provider and are not affiliated with
+      TikTok, Meta, Facebook, or Instagram.
+    </p>
+
+    <div class="grid">
+      @for (service of services; track service.title) {
+        <article class="card">
+          <h3>{{ service.title }}</h3>
+          <p>{{ service.body }}</p>
+        </article>
+      }
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container">
+    <h2>How It Works</h2>
+    <div class="steps">
+      @for (step of steps; track step.title) {
+        <article class="step">
+          <div>
+            <h3>{{ step.title }}</h3>
+            <p>{{ step.body }}</p>
+          </div>
+        </article>
+      }
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>Review Information</h2>
+    <p class="section-intro">
+      Full Ads is built for transparent business review. Users can reach support, understand what
+      data is collected, and review the rules that apply before using the service.
+    </p>
+    <div class="notice">
+      TikTok, Facebook, Instagram, and Meta are trademarks of their respective owners. Full Ads
+      does not sell official coins directly, guarantee platform approvals, or represent that it is
+      endorsed by any platform.
+    </div>
+  </div>
+</section>

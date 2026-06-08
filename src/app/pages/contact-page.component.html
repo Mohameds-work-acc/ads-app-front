@@ -1,0 +1,73 @@
+<section class="page-hero">
+  <div class="container">
+    <p class="eyebrow">Support</p>
+    <h1>Contact Full Ads</h1>
+    <p>
+      Use this page for payment support, advertising campaign requests, onboarding review
+      questions, data requests, or legal notices.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container contact-layout">
+    <div>
+      <h2>Business Contact</h2>
+      <p class="section-intro">
+        We answer most support requests within two business days. Replace the sample address below
+        with your official support mailbox before submitting the site for review.
+      </p>
+
+      <ul class="contact-list">
+        <li><strong>Email:</strong> support@full-ads.com</li>
+        <li><strong>Business name:</strong> Full Ads</li>
+        <li><strong>Service area:</strong> Online support for digital payment and advertising operations</li>
+        <li><strong>Hours:</strong> Sunday to Thursday, 9:00 AM to 6:00 PM Cairo time</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Send a Request</h2>
+
+      @if (statusMessage) {
+        <p class="form-status">{{ statusMessage }}</p>
+      }
+
+      <form [formGroup]="form" (ngSubmit)="submit()">
+        <label>
+          Name
+          <input formControlName="name" autocomplete="name" />
+        </label>
+
+        <label>
+          Email
+          <input formControlName="email" type="email" autocomplete="email" />
+        </label>
+
+        <label>
+          Request type
+          <select formControlName="requestType">
+            <option value="">Select a request</option>
+            <option value="TikTok Coin payment support">TikTok Coin payment support</option>
+            <option value="Facebook ads setup">Facebook ads setup</option>
+            <option value="Instagram ads setup">Instagram ads setup</option>
+            <option value="Privacy or data request">Privacy or data request</option>
+            <option value="Other support">Other support</option>
+          </select>
+        </label>
+
+        <label>
+          Message
+          <textarea formControlName="message"></textarea>
+        </label>
+
+        <button class="button primary" type="submit">Send message</button>
+
+        <p class="form-note">
+          Please do not include passwords, full card numbers, one-time codes, or sensitive account
+          credentials.
+        </p>
+      </form>
+    </div>
+  </div>
+</section>
