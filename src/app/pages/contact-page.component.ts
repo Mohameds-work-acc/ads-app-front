@@ -34,10 +34,11 @@ export class ContactPageComponent {
     ].join('\n');
 
     const mailto =
-      `mailto:support@simple-saas-dashboard.com?subject=${encodeURIComponent('Simple SaaS Dashboard support request')}` +
+      `mailto:support@flowdesk.app?subject=${encodeURIComponent('FlowDesk support request')}` +
       `&body=${encodeURIComponent(body)}`;
 
     this.statusMessage = 'Opening your email app with the request details.';
     window.location.href = mailto;
   }
 }
+
